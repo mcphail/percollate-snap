@@ -16,6 +16,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: nodejs
     nodejs-version: 10.22.0
+    nodejs-package-manager: npm
     source: https://github.com/danburzo/percollate.git
     stage-packages:
       - ca-certificates
