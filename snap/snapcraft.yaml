@@ -72,5 +72,5 @@ parts:
 apps:
   percollate:
     extensions: [gnome-3-28]
-    command: percollate
-    plugs: [home, network]
+    command: percollate --no-sandbox
+    plugs: [home, network, browser-support]
