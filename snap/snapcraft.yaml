@@ -66,9 +66,13 @@ parts:
         cd "/snap/$snap/current" && find . -type f,l -exec rm -r "$SNAPCRAFT_PRIME/{}" \;
       done
 
+plugs:
+  browser-sandbox:
+    interface: browser-support
+    allow-sandbox: true
 
 apps:
   percollate:
     extensions: [gnome-3-28]
-    command: percollate --no-sandbox
+    command: percollate
     plugs: [home, network, browser-support]
